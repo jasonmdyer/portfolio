@@ -151,18 +151,15 @@ li, a {
 	width: 120%;
 	height: 100%;
 	background: linear-gradient(80deg, transparent 1%, #f1f1f1 10%, #f1f1f1 100%);
-	animation: animate 9s linear infinite;
+	animation: animate 5s linear infinite;
 }
 
 @keyframes animate{
 	0%{
 		left: -20%;
 	}
-	50%{
-		left: 120%;
-	}
 	100%{
-		left: -20%;
+		left: 120%;
 	}
 }
 
