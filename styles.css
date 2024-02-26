@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Roboto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #EBEBEB;
+}
+
+/* NAV START */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    padding-top: 25px;
+    letter-spacing: -5px;
+}
+
+.github-logo {
+    width: 35px;
+    vertical-align: middle;
+    transition: all 0.8s ease 0s;
+}
+
+.linkedin-logo {
+    width: 35px;
+    vertical-align: middle;
+    transition: all 0.8s ease 0s;
+}
+
+.x-logo {
+    width: 30px;
+    vertical-align: middle;
+    transition: all 0.8s ease 0s;
+    margin-right: 900px;
+}
+
+.github-logo:hover {
+    opacity: 0;
+}
+
+.linkedin-logo:hover {
+    opacity: 0;
+}
+
+.x-logo:hover {
+    opacity: 0;
+}
+
+li, a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;    
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.nav-links1 {
+    list-style: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.nav-links1 li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav-links1 li a {
+    transition: all 0.8s ease 0s;
+}
+
+.nav-links1 li a:hover {
+    letter-spacing: 3px;
+}
+
+/* NAV END */
+
+/* HOME SECTION START */
+
+.home {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .home-text {
+    width: 40ch;
+    animation: typing 3.5s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 52px;
+    letter-spacing: -3px;
+    font-weight: 200;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+/* HOME SECTION END */
+
+/* ABOUT SECTION START */
+
+.about {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+    margin-bottom: 300px;
+}
+
+.about-text {
+    position: relative;
+	font-size: 52px;
+	color: #000000;
+	overflow: hidden;
+    letter-spacing: -3px;
+    font-weight: 200;
+}
+
+.about-text::before{
+	content: '';
+	position: absolute;
+	left: 120%;
+	width: 120%;
+	height: 100%;
+	background: linear-gradient(80deg, transparent 1%, #ebebeb 15%, #ebebeb 100%);
+	animation: animate 7s linear infinite;
+}
+
+@keyframes animate{
+	0%{
+		left: -20%;
+	}
+	50%{
+		left: 120%;
+	}
+	100%{
+		left: -20%;
+	}
+}
+
+
+/* ABOUT SECTION END */
+
+/* WORK SECTION START */
+
+.work {
+    position: absolute;
+    width: 100%;
+}
+
+.project1 {
+    width: 750px;
+    height: 500px;
+    margin: 5% auto 0 auto;
+    background: url(https://wp.dailybruin.com/images/2023/03/7.JS11.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project2 {
+    width: 750px;
+    height: 500px;
+    margin: 5% auto 0 auto;
+    background: url(https://i.ibb.co/jRNgzX7/nike.png);
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+#overlay {
+    height: 100%;
+    background: #EBEBEB;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 1.3s ease;
+    -moz-transition: opacity 1.3s ease;
+}
+  
+.project1:hover #overlay {
+    opacity: 1;
+}
+
+.project2:hover #overlay {
+    opacity: 1;
+}
+  
+.overlay-text {
+    padding-top: 225px;
+    background: none;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 45px;
+}
+
+/* WORK SECTION END */
+
+/* CONTACT SECTION START */
+
+.contact-section {
+    visibility: hidden;
+    width: 100%;
+    height: 800px;
+    margin-top: 100px;
+}
+
+/* CONTACT SECTION END */
+
+
+  
+
+
+
+
