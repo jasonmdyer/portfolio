@@ -24,7 +24,7 @@ header {
     align-items: center;
     background-color: none;
     padding-top: 25px;
-    letter-spacing: -5px;
+    letter-spacing: -1px;
 }
 
 .github-logo {
@@ -66,18 +66,16 @@ li, a {
     font-size: 16px;
     color: #000000;    
     text-decoration: none;
-    letter-spacing: -1px;
 }
 
 .nav-links1 {
     list-style: none;
     text-transform: uppercase;
-    margin-right: 10px;
 }
 
 .nav-links1 li {
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0px 10px;
 }
 
 .nav-links1 li a {
@@ -151,7 +149,7 @@ li, a {
 	width: 120%;
 	height: 100%;
 	background: linear-gradient(80deg, transparent 1%, #f1f1f1 10%, #f1f1f1 100%);
-	animation: animate 5s linear infinite;
+	animation: animate 5s linear;
 }
 
 @keyframes animate{
@@ -188,10 +186,12 @@ li, a {
     width: 750px;
     height: 500px;
     margin: 3% auto 0 auto;
-    background: url(https://i.ibb.co/jRNgzX7/nike.png);
+    background: url(https://i.ibb.co/4RG42LL/rg119l-sp24-alphafly3-ta-swanson-proto-profile-3827-1x1.jpg);
     background-size: cover;
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    margin-bottom: 150px;
 }
   
 #overlay {
@@ -221,18 +221,18 @@ li, a {
 }
 
 .tech-icons {
-    padding-top: 45px;
+    padding-top: 35px;
 }
 
 .css-icon {
     width: 60px;
-    padding-left: 15px;
+    padding-left: 5px;
     transition: all 1.5s ease 0s;
 }
 
 .html-icon {
     width: 60px;
-    padding-right: 15px;
+    padding-right: 5px;
     transition: all 1.5s ease 0s;
 }
 
@@ -269,7 +269,6 @@ input::placeholder, textarea::placeholder {
     color: #000000;
     font-size: 15px;
     transition: all 1s ease 0s;
-
 }
 
 input:hover::placeholder {
@@ -326,7 +325,6 @@ textarea:hover::placeholder {
     border: none;
     letter-spacing: -0.5px;
     transition: all 1s ease 0s;
-
 }
   
 #submit:hover {
