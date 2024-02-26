@@ -48,17 +48,17 @@ header {
 
 .github-logo:hover {
     opacity: 0;
-    transform: scale(1.75) rotate(360deg);
+    transform: scale(1.25) rotate(360deg);
 }
 
 .linkedin-logo:hover {
     opacity: 0;
-    transform: scale(1.75) rotate(360deg);
+    transform: scale(1.25) rotate(360deg);
 }
 
 .x-logo:hover {
     opacity: 0;
-    transform: scale(1.75) rotate(360deg);
+    transform: scale(1.25) rotate(360deg);
 }
 
 li, a {
@@ -228,31 +228,114 @@ li, a {
 }
 
 .css-icon {
-    width: 80px;
+    width: 60px;
     padding-left: 15px;
     transition: all 1.5s ease 0s;
 }
 
 .html-icon {
-    width: 80px;
+    width: 60px;
     padding-right: 15px;
     transition: all 1.5s ease 0s;
 }
 
 .css-icon:hover {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(0.8);
 }
 
 .html-icon:hover {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(0.8);
 }
 
 /* WORK SECTION END */
 
 /* CONTACT SECTION START */
 
+.contact-section {
+    padding-top: 175px;
+    margin-bottom: 500px;    
+    width: 100%;
+    text-align: center;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-weight: 300;
+}
+  
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    visibility: hidden;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #000000;
+    font-size: 15px;
+    transition: all 1s ease 0s;
+
+}
+
+input:hover::placeholder {
+    opacity: 0;
+}
+
+#form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+}
+  
+input {
+    font-size: 15px;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    border: #f2f2f2 1px solid;
+    color: #000000;
+}
+  
+textarea {
+    width: 470px;
+    height: 200px;
+    padding: 15px;
+    background: transparent;
+    color: #000000;
+    font-size: 15px;
+    border: #f2f2f2 1px ;
+    resize: none;
+}
+
+textarea::placeholder {
+    transition: all 1s ease 0s;
+}
+
+textarea:focus::placeholder {
+    visibility: hidden;
+}
+
+textarea:hover::placeholder {
+    opacity: 0;
+}
+  
+#submit {
+    width: 470px;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    letter-spacing: -0.5px;
+    transition: all 1s ease 0s;
+
+}
+  
+#submit:hover {
+    color: #f1f1f1;
+    background-color: #000000;
+}
 
 /* CONTACT SECTION END */
 
