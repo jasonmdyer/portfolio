@@ -359,3 +359,17 @@ textarea:hover::placeholder {
 }
 
 /* CONTACT SECTION END */
+
+/* RESUME SECTION START */
+
+embed {
+    width: 746px;
+    height: 1100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-left: 373px;
+    margin-right: 373px;
+    padding-top: 100px;
+}
+
+/* RESUME SECTION END */
