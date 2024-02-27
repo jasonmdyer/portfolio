@@ -246,6 +246,15 @@ li, a {
     transform: scale(0.8);
 }
 
+.arrow {
+    font-size: 25px;
+}
+
+.arrow:hover {
+    margin-left: 50px;
+    margin-bottom:50px;
+}
+
 /* WORK SECTION END */
 
 /* CONTACT SECTION START */
