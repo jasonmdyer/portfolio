@@ -244,9 +244,39 @@ li, a {
 
 /* CONTACT SECTION START */
 
+.connect {
+    margin-top: 100px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.connect-text {
+    width: 340px;
+    animation: typing 2s steps(30), blink 0.6s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 52px;
+    letter-spacing: -4px;
+    font-weight: 200;
+}
+
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
 .contact-section {
-    padding-top: 175px;
-    margin-bottom: 500px;    
+    padding-top: 20px;
     width: 100%;
     text-align: center;
 }
@@ -281,7 +311,8 @@ input {
     height: 50px;
     padding: 0px 15px 0px 15px;
     background: transparent;
-    border: #f2f2f2 1px solid;
+    border: #000000 1px solid;
+    border-bottom: none;
     color: #000000;
 }
   
@@ -292,7 +323,7 @@ textarea {
     background: transparent;
     color: #000000;
     font-size: 15px;
-    border: #f2f2f2 1px ;
+    border: #000000 1px solid;
     resize: none;
 }
 
@@ -319,6 +350,7 @@ textarea:hover::placeholder {
     border: none;
     letter-spacing: -0.5px;
     transition: all 1s ease 0s;
+    border-radius: 5px;;
 }
   
 #submit:hover {
