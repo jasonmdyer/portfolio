@@ -242,11 +242,12 @@ li, a {
 
 .arrow {
     font-size: 25px;
+    transition: all 1s ease 0s;
 }
 
 .arrow:hover {
     margin-left: 50px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 /* WORK SECTION END */
