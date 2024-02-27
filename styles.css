@@ -98,13 +98,13 @@ li, a {
   }
   
   .home-text {
-    width: 1085px;
-    animation: typing 4s steps(24), blink 0.6s step-end infinite alternate;
+    width: 1140px;
+    animation: typing 4s steps(24), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-size: 52px;
-    letter-spacing: -4px;
+    letter-spacing: -3px;
     font-weight: 200;
 
   }
@@ -132,8 +132,8 @@ li, a {
 }
 
 .about-text {
-    width: 735px;
-    animation: typing 4s steps(24), blink 0.6s step-end infinite alternate;
+    width: 730px;
+    animation: typing 4s steps(24), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -253,7 +253,7 @@ li, a {
 
 .connect-text {
     width: 340px;
-    animation: typing 2s steps(30), blink 0.6s step-end infinite alternate;
+    animation: typing 2s steps(30), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -350,7 +350,7 @@ textarea:hover::placeholder {
     border: none;
     letter-spacing: -0.5px;
     transition: all 1s ease 0s;
-    border-radius: 5px;;
+    border-radius: 1px;
 }
   
 #submit:hover {
@@ -359,8 +359,3 @@ textarea:hover::placeholder {
 }
 
 /* CONTACT SECTION END */
-
-
-
-
-
