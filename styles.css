@@ -209,21 +209,21 @@ li, a {
 
 .about-me {
     padding-top: 175px;
-    font-size: 45px;
-    width: 1400px;
+    font-size: 32px;
+    width: 1150px;
     font-weight: 200;
     margin-left: auto;
     margin-right: auto;
-    letter-spacing: -1.9px;
+    letter-spacing: -1.5px;
     text-align: center;
     line-height: 50px;
-    padding-bottom: 160px;
+    padding-bottom: 130px;
 }
 
 .correlation-one {
     background: none;
-    font-size: 52px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
     cursor: pointer;
     transition: all 1s ease 0s;
 }
@@ -232,16 +232,10 @@ li, a {
     opacity: 0;
 }
 
-.curriculum-vitae {
-    padding-top: 500px;
-    padding-bottom: 500px;
-    text-align: left;
-    font-size: 30px;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 1px;
+.about-me-text {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-
 
 /* ABOUT SECTION END */
 
@@ -458,5 +452,3 @@ embed {
     margin-right: 373px;
     padding-top: 100px;
 }
-
-/* RESUME SECTION END */
