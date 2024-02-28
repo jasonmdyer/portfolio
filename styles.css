@@ -291,6 +291,7 @@ li, a {
     padding-top: 225px;
     background: none;
     font-weight: 200;
+    letter-spacing: -4px;
     color: rgba(0, 0, 0, 0.75);
     font-size: 45px;
 }
@@ -373,6 +374,7 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
 input::placeholder, textarea::placeholder {
     color: #000000;
     font-size: 15px;
+    letter-spacing: -0.9px;
     transition: all 1s ease 0s;
 }
 
@@ -392,7 +394,7 @@ input {
     height: 50px;
     padding: 0px 15px 0px 15px;
     background: transparent;
-    border: #000000 1px solid;
+    border: #afafaf 1px solid;
     border-bottom: none;
     color: #000000;
 }
@@ -404,7 +406,7 @@ textarea {
     background: transparent;
     color: #000000;
     font-size: 15px;
-    border: #000000 1px solid;
+    border: #afafaf 1px solid;
     resize: none;
 }
 
@@ -429,7 +431,7 @@ textarea:hover::placeholder {
     color: #000000;
     cursor: pointer;
     border: none;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.9px;
     transition: all 1s ease 0s;
     border-radius: 1px;
 }
