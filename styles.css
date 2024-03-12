@@ -244,6 +244,7 @@ li, a {
 .work {
     position: absolute;
     width: 100%;
+    height: 100%;
 }
 
 .project1 {
@@ -267,18 +268,20 @@ li, a {
     overflow: hidden;
     cursor: pointer;
     margin-bottom: 150px;
+    margin-top: 100px;
 }
   
 .project3 {
     width: 750px;
     height: 500px;
     margin: 3% auto 0 auto;
-    background: url(https://ibb.co/fYhLYXR);
+    background: url(https://ibb.co/HFTzc0B);
     background-size: cover;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     margin-bottom: 150px;
+    margin-top: 700px;
 }
 
 #overlay {
@@ -313,7 +316,7 @@ li, a {
 }
 
 .tech-icons {
-    padding-top: 35px;
+    padding-top: 40px;
 }
 
 .css-icon {
