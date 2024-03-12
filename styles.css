@@ -209,7 +209,7 @@ li, a {
 
 .about-me {
     padding-top: 175px;
-    font-size: 32px;
+    font-size: 35px;
     width: 1150px;
     font-weight: 200;
     margin-left: auto;
@@ -222,8 +222,8 @@ li, a {
 
 .correlation-one {
     background: none;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 500;
     cursor: pointer;
     transition: all 1s ease 0s;
 }
@@ -269,6 +269,18 @@ li, a {
     margin-bottom: 150px;
 }
   
+.project3 {
+    width: 750px;
+    height: 500px;
+    margin: 3% auto 0 auto;
+    background: url(https://ibb.co/fYhLYXR);
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+
 #overlay {
     height: 105%;
     background: #F1F1F1;
@@ -283,6 +295,10 @@ li, a {
 }
 
 .project2:hover #overlay {
+    opacity: 1;
+}
+
+.project3:hover #overlay {
     opacity: 1;
 }
   
@@ -304,6 +320,17 @@ li, a {
     width: 60px;
     padding-left: 5px;
     transition: all 1.5s ease 0s;
+}
+
+.javascript-icon {
+    width: 60px;
+    padding-left: 5px;
+    transition: all 1.5s ease 0s;
+}
+
+.javascript-icon:hover {
+    opacity: 0;
+    transform: scale(0.8);
 }
 
 .html-icon {
