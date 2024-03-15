@@ -381,7 +381,7 @@ li, a {
 
 .connect-text {
     width: 340px;
-    animation: typing 2s steps(30), blink 0.5s step-end infinite alternate;
+    animation: typing 2s steps(24), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
