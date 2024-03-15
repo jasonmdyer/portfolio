@@ -503,7 +503,37 @@ embed {
 
 /* RESUME SECTION END */
 
-/* SUCCESS START */
+/* FORM SUCCESS START */
 
+.success {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .success-text {
+    width: 190px;
+    animation: typing 1s steps(10), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 52px;
+    letter-spacing: -3px;
+    font-weight: 200;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+/* FORM SUCCESS END */
 
 
