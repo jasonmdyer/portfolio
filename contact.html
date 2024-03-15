@@ -42,9 +42,15 @@
         <div class="contact-section" id="contact">
             <div class="contact-form">
             <form action="https://formsubmit.co/42685cd3cfd5cea110e4b6398afc0326" method="POST" id="form">
-            <input id="name" type="text" name="name" placeholder="NAME">
-            <input id="email" type="text" name="email" placeholder="E-MAIL">
-            <textarea id="message" type="text" name="comments, questions" placeholder="MESSAGE"></textarea>
+                <!--Honeypot-->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!--Disable Captcha-->
+                <input type="hidden" name="_captcha" value="false">
+
+            <input id="name" type="text" name="Name" placeholder="NAME">
+            <input id="email" type="text" name="Email" placeholder="E-MAIL">
+            <textarea id="message" type="text" name="Message" placeholder="MESSAGE"></textarea>
             <input id="submit" type="submit" value="SUBMIT">
             </form>
          </div>
