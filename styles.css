@@ -505,13 +505,5 @@ embed {
 
 /* SUCCESS START */
 
-.success-text {
-    width: 1140px;
-    animation: typing 4s steps(24), blink 0.4s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 12px;
-    letter-spacing: -3px;
-    font-weight: 200;
-}
+
+
