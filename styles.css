@@ -536,4 +536,8 @@ embed {
 
 /* FORM SUCCESS END */
 
+/* MEDIA QUERY START */
 
+@media screen and (max-width: 480px) {}
+
+/* MEDIA QUERY END */
