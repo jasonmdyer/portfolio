@@ -333,6 +333,10 @@ li, a {
 .project4:hover #overlay {
     opacity: 1;
 }
+
+.project5:hover #overlay {
+    opacity: 1;
+}
   
 .overlay-text {
     transition: all 1.5s ease 0s;
