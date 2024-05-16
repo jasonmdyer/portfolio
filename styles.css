@@ -219,19 +219,6 @@ li, a {
     line-height: 50px;
     padding-bottom: 130px;
 }
-
-.correlation-one {
-    background: none;
-    font-size: 32px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 1s ease 0s;
-}
-
-.correlation-one:hover {
-    opacity: 0;
-}
-
 .about-me-text {
     margin-top: 100px;
     margin-bottom: 100px;
