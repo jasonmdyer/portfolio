@@ -296,6 +296,19 @@ li, a {
     margin-top: 100px;
 }
 
+.project5 {
+    width: 750px;
+    height: 500px;
+    margin: 3% auto 0 auto;
+    background: url(html.png);
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
 #overlay {
     height: 105%;
     background: #F1F1F1;
