@@ -296,6 +296,20 @@ li, a {
     margin-top: 100px;
 }
 
+.project6 {
+    width: 750px;
+    height: 500px;
+    margin: 3% auto 0 auto;
+    background: url(pokemon-game-image.png);
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
+
 #overlay {
     height: 105%;
     background: #F1F1F1;
@@ -324,6 +338,10 @@ li, a {
 .project5:hover #overlay {
     opacity: 1;
 }
+
+.project6:hover #overlay {
+    opacity: 1;
+}
   
 .overlay-text {
     transition: all 1.5s ease 0s;
@@ -349,6 +367,17 @@ li, a {
     height: 55px;
     padding-right: 10px;
     transition: all 1.5s ease 0s;
+}
+
+.tiled-icon {
+    height: 55px;
+    padding-right: 10px;
+    transition: all 1.5s ease 0s;
+}
+
+.tiled-icon:hover {
+    opacity: 0;
+    transform: scale(0.8);
 }
 
 .javascript-icon:hover {
