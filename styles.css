@@ -309,6 +309,19 @@ li, a {
     margin-top: 100px;
 }
 
+.project7 {
+    width: 750px;
+    height: 500px;
+    margin: 3% auto 0 auto;
+    background: url(kingsimage.png);
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
 
 #overlay {
     height: 105%;
