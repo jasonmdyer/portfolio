@@ -224,6 +224,13 @@ li, a {
     margin-bottom: 100px;
 }
 
+.certificates {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* ABOUT SECTION END */
 
 /* WORK SECTION START */
