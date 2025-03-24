@@ -70,26 +70,29 @@ li, a {
 
 .nav-icons {
     list-style: none;
-    display: flex; /* Always horizontal */
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly; /* Evenly spaced icons */
     align-items: center;
     padding: 10px 0;
+    width: 100%; /* Full width for even distribution */
 }
 
 .nav-icons li {
-    padding: 0 10px; /* Space between icons */
+    padding: 0 5px; /* Reduced padding for tighter spacing */
 }
 
 .nav-links1 {
     list-style: none;
     text-transform: uppercase;
-    display: flex; /* Default for desktop */
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly; /* Evenly spaced text links */
+    align-items: center;
+    padding: 10px 0;
+    width: 100%; /* Full width for even distribution */
 }
 
 .nav-links1 li {
-    display: inline-block;
-    padding: 0px 10px;
+    padding: 0 5px; /* Reduced padding for tighter spacing */
 }
 
 .nav-links1 li a {
@@ -595,35 +598,35 @@ embed {
 /* Mobile (up to 480px) */
 @media screen and (max-width: 480px) {
   header {
-    padding-top: 15px;
+    padding-top: 10px; /* Reduced padding */
   }
 
   /* Icons stay horizontal */
   .nav-icons {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-evenly;
+    gap: 5px; /* Tighter spacing */
+    padding: 5px 0;
   }
 
   .github-logo, .linkedin-logo, .x-logo {
-    width: 25px;
+    width: 20px; /* Smaller icons */
   }
 
-  /* Text links stack vertically */
+  /* Text links stay horizontal */
   .nav-links1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: space-evenly;
+    gap: 5px; /* Tighter spacing */
+    padding: 5px 0;
   }
 
   .nav-links1 li {
-    display: block;
-    padding: 10px 0;
+    padding: 0 5px;
   }
 
   .nav-links1 li a {
-    font-size: 14px;
+    font-size: 12px; /* Smaller text */
   }
 
   /* Home Section */
@@ -720,16 +723,19 @@ embed {
 /* Tablet (481px to 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .nav-icons {
-    gap: 20px;
+    gap: 15px; /* Moderate spacing */
+  }
+
+  .github-logo, .linkedin-logo, .x-logo {
+    width: 25px; /* Slightly larger icons */
   }
 
   .nav-links1 {
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 15px; /* Moderate spacing */
   }
 
-  .nav-links1 li {
-    padding: 10px 15px;
+  .nav-links1 li a {
+    font-size: 14px; /* Slightly larger text */
   }
 
   .home-text {
@@ -771,11 +777,11 @@ embed {
 /* Desktop (above 768px) */
 @media screen and (min-width: 769px) {
   .nav-icons {
-    gap: 30px;
+    gap: 20px; /* Original spacing */
   }
 
   .nav-links1 {
-    flex-wrap: nowrap;
+    gap: 20px; /* Original spacing */
   }
 }
 
