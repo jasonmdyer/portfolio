@@ -786,6 +786,10 @@ embed {
   .nav-links1 {
     gap: 20px;
   }
+
+  body {
+    overflow: hidden; /* Prevents scrolling on desktop */
+  }
 }
 
 /* MEDIA QUERY END */
