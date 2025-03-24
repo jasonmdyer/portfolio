@@ -595,6 +595,192 @@ embed {
 
 /* MEDIA QUERY START */
 
-@media screen and (max-width: 480px) {}
+/* Mobile (up to 480px) */
+@media screen and (max-width: 480px) {
+  /* Navigation */
+  header {
+    padding-top: 15px; /* Reduce padding */
+  }
+
+  .nav-links1 {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links1 li {
+    display: block; /* Override inline-block */
+    padding: 10px 0; /* Vertical spacing */
+  }
+
+  .x-logo {
+    margin-right: 0; /* Remove massive margin */
+  }
+
+  .github-logo, .linkedin-logo, .x-logo {
+    width: 25px; /* Smaller icons for mobile */
+  }
+
+  .nav-links1 li a {
+    font-size: 14px; /* Smaller text */
+  }
+
+  /* Home Section */
+  .home {
+    height: auto; /* Allow height to adjust */
+    padding: 20px;
+  }
+
+  .home-text {
+    width: 100%; /* Full width */
+    font-size: 24px; /* Smaller text */
+    letter-spacing: -1px;
+    white-space: normal; /* Allow wrapping */
+    animation: none; /* Optional: remove animation for simplicity */
+    border-right: none;
+  }
+
+  /* About Section */
+  .about {
+    height: auto;
+    padding: 20px;
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: -1px;
+    white-space: normal;
+    animation: none;
+    border-right: none;
+  }
+
+  .about-me {
+    width: 90%;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .certificates {
+    max-width: 80%; /* Larger relative to screen */
+  }
+
+  /* Work Section */
+  .project1, .project2, .project3, .project4, .project5, .project6, .project7 {
+    width: 90%;
+    height: 300px; /* Smaller height */
+    margin: 20px auto;
+  }
+
+  .overlay-text {
+    font-size: 30px;
+    padding-top: 130px;
+  }
+
+  .tech-icons img {
+    width: 40px; /* Smaller icons */
+    height: auto;
+  }
+
+  /* Contact Section */
+  .connect-text {
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+
+  #form {
+    width: 90%;
+  }
+
+  input, textarea, #submit {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Resume Section */
+  embed {
+    width: 90%;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* Success Section */
+  .success-text {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+
+/* Tablet (481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Navigation */
+  .nav-links1 {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center;
+  }
+
+  .nav-links1 li {
+    padding: 10px 15px;
+  }
+
+  .x-logo {
+    margin-right: 0; /* Reset margin */
+  }
+
+  /* Home Section */
+  .home-text {
+    width: 90%;
+    font-size: 36px;
+  }
+
+  /* About Section */
+  .about-text {
+    width: 90%;
+    font-size: 36px;
+  }
+
+  .about-me {
+    width: 90%;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  /* Work Section */
+  .project1, .project2, .project3, .project4, .project5, .project6, .project7 {
+    width: 80%;
+    height: 400px;
+  }
+
+  /* Contact Section */
+  #form {
+    width: 80%;
+  }
+
+  input, textarea, #submit {
+    width: 100%;
+  }
+
+  /* Resume Section */
+  embed {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Desktop adjustments (above 768px) */
+@media screen and (min-width: 769px) {
+  /* Keep most of your original styles, just tweak if needed */
+  .x-logo {
+    margin-right: 0; /* Remove this if you intended spacing, or adjust */
+  }
+}
 
 /* MEDIA QUERY END */
