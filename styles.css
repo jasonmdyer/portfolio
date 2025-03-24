@@ -43,7 +43,7 @@ header {
     width: 30px;
     vertical-align: middle;
     transition: all 1.5s ease 0s;
-    margin-right: 900px;
+    margin-right: 0; /* Updated from 900px */
 }
 
 .github-logo:hover {
@@ -68,9 +68,23 @@ li, a {
     text-decoration: none;
 }
 
+.nav-icons {
+    list-style: none;
+    display: flex; /* Always horizontal */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-icons li {
+    padding: 0 10px; /* Space between icons */
+}
+
 .nav-links1 {
     list-style: none;
     text-transform: uppercase;
+    display: flex; /* Default for desktop */
+    justify-content: center;
 }
 
 .nav-links1 li {
@@ -84,7 +98,6 @@ li, a {
 
 .nav-links1 li a:hover {
     letter-spacing: 3px;
-
 }
 
 /* NAV END */
@@ -95,9 +108,9 @@ li, a {
     height: 90vh;
     display: grid;
     place-items: center;
-  }
+}
   
-  .home-text {
+.home-text {
     width: 1140px;
     animation: typing 4s steps(24), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
@@ -106,20 +119,19 @@ li, a {
     font-size: 52px;
     letter-spacing: -3px;
     font-weight: 200;
-
-  }
+}
   
-  @keyframes typing {
+@keyframes typing {
     from {
       width: 0
     }
-  }
+}
       
-  @keyframes blink {
+@keyframes blink {
     50% {
       border-color: transparent
     }
-  }
+}
 
 /* HOME SECTION END */
 
@@ -142,24 +154,11 @@ li, a {
     font-weight: 200;
 }
 
-
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-  
 .arrow {
     opacity: 0;
     position: absolute;
-        left: 50%;
-        top: 90%;
+    left: 50%;
+    top: 90%;
     transform-origin: 50% 50%;
     transform: translate3d(-50%, -50%, 0);
 }
@@ -173,14 +172,13 @@ li, a {
 
 .arrow:before,
 .arrow:after {
-
     background: #000000;
     content: '';
     display: block;
     height: 2px; 
     position: absolute;
-        top: 0%;
-        left: 0;
+    top: 0%;
+    left: 0;
     width: 40px;
 }
 
@@ -219,16 +217,17 @@ li, a {
     line-height: 50px;
     padding-bottom: 130px;
 }
+
 .about-me-text {
     margin-top: 100px;
     margin-bottom: 30px;
 }
 
 .certificates {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
 }
 
 /* ABOUT SECTION END */
@@ -236,7 +235,7 @@ li, a {
 /* WORK SECTION START */
 
 .work {
-    width: 100%;;
+    width: 100%;
     height: 100%;
     margin-bottom: 200px;
 }
@@ -328,7 +327,6 @@ li, a {
     margin-bottom: 150px;
     margin-top: 100px;
 }
-
 
 #overlay {
     height: 105%;
@@ -447,18 +445,17 @@ li, a {
     font-weight: 200;
 }
 
-
-  @keyframes typing {
+@keyframes typing {
     from {
       width: 0
     }
-  }
+}
       
-  @keyframes blink {
+@keyframes blink {
     50% {
       border-color: transparent
     }
-  }
+}
 
 .contact-section {
     padding-top: 20px;
@@ -566,9 +563,9 @@ embed {
     height: 90vh;
     display: grid;
     place-items: center;
-  }
+}
   
-  .success-text {
+.success-text {
     width: 190px;
     animation: typing 1s steps(10), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
@@ -577,19 +574,19 @@ embed {
     font-size: 52px;
     letter-spacing: -3px;
     font-weight: 200;
-  }
+}
   
-  @keyframes typing {
+@keyframes typing {
     from {
       width: 0
     }
-  }
+}
       
-  @keyframes blink {
+@keyframes blink {
     50% {
       border-color: transparent
     }
-  }
+}
 
 /* FORM SUCCESS END */
 
@@ -597,47 +594,50 @@ embed {
 
 /* Mobile (up to 480px) */
 @media screen and (max-width: 480px) {
-  /* Navigation */
   header {
-    padding-top: 15px; /* Reduce padding */
+    padding-top: 15px;
   }
 
+  /* Icons stay horizontal */
+  .nav-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .github-logo, .linkedin-logo, .x-logo {
+    width: 25px;
+  }
+
+  /* Text links stack vertically */
   .nav-links1 {
     display: flex;
-    flex-direction: column; /* Stack vertically */
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
   .nav-links1 li {
-    display: block; /* Override inline-block */
-    padding: 10px 0; /* Vertical spacing */
-  }
-
-  .x-logo {
-    margin-right: 0; /* Remove massive margin */
-  }
-
-  .github-logo, .linkedin-logo, .x-logo {
-    width: 25px; /* Smaller icons for mobile */
+    display: block;
+    padding: 10px 0;
   }
 
   .nav-links1 li a {
-    font-size: 14px; /* Smaller text */
+    font-size: 14px;
   }
 
   /* Home Section */
   .home {
-    height: auto; /* Allow height to adjust */
+    height: auto;
     padding: 20px;
   }
 
   .home-text {
-    width: 100%; /* Full width */
-    font-size: 24px; /* Smaller text */
+    width: 100%;
+    font-size: 24px;
     letter-spacing: -1px;
-    white-space: normal; /* Allow wrapping */
-    animation: none; /* Optional: remove animation for simplicity */
+    white-space: normal;
+    animation: none;
     border-right: none;
   }
 
@@ -665,13 +665,13 @@ embed {
   }
 
   .certificates {
-    max-width: 80%; /* Larger relative to screen */
+    max-width: 80%;
   }
 
   /* Work Section */
   .project1, .project2, .project3, .project4, .project5, .project6, .project7 {
     width: 90%;
-    height: 300px; /* Smaller height */
+    height: 300px;
     margin: 20px auto;
   }
 
@@ -681,7 +681,7 @@ embed {
   }
 
   .tech-icons img {
-    width: 40px; /* Smaller icons */
+    width: 40px;
     height: auto;
   }
 
@@ -719,10 +719,12 @@ embed {
 
 /* Tablet (481px to 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  /* Navigation */
+  .nav-icons {
+    gap: 20px;
+  }
+
   .nav-links1 {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping if needed */
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -730,17 +732,11 @@ embed {
     padding: 10px 15px;
   }
 
-  .x-logo {
-    margin-right: 0; /* Reset margin */
-  }
-
-  /* Home Section */
   .home-text {
     width: 90%;
     font-size: 36px;
   }
 
-  /* About Section */
   .about-text {
     width: 90%;
     font-size: 36px;
@@ -752,13 +748,11 @@ embed {
     line-height: 40px;
   }
 
-  /* Work Section */
   .project1, .project2, .project3, .project4, .project5, .project6, .project7 {
     width: 80%;
     height: 400px;
   }
 
-  /* Contact Section */
   #form {
     width: 80%;
   }
@@ -767,7 +761,6 @@ embed {
     width: 100%;
   }
 
-  /* Resume Section */
   embed {
     width: 80%;
     margin-left: auto;
@@ -775,11 +768,14 @@ embed {
   }
 }
 
-/* Desktop adjustments (above 768px) */
+/* Desktop (above 768px) */
 @media screen and (min-width: 769px) {
-  /* Keep most of your original styles, just tweak if needed */
-  .x-logo {
-    margin-right: 0; /* Remove this if you intended spacing, or adjust */
+  .nav-icons {
+    gap: 30px;
+  }
+
+  .nav-links1 {
+    flex-wrap: nowrap;
   }
 }
 
